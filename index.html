@@ -10,40 +10,23 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="js/main.js"></script>
 </head>
-<body>
-<div class="header-main-wrapper">
+<body class="flex-container-v">
+<div class="header-main-container">
     <header>
-        <nav>
-            <div class="nav-container">
-                <ul class="nav-menu">
+        <div class="header-container">
+            <nav>
+                <ul>
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                 </ul>
-                <ul class="social-media">
-                    <li>
-                        <a href="https://t.me/Hosein_Rahnama" target="_blank" aria-label="Telegram">
-                            <img src="images/icons/telegram.png" alt="Telegram" class="social-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/hosein.rahnama" target="_blank" aria-label="Instagram">
-                            <img src="images/icons/instagram.png" alt="Instagram" class="social-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/hosein-rahnama/" target="_blank" aria-label="LinkedIn">
-                            <img src="images/icons/linkedin.png" alt="LinkedIn" class="social-icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="profile">
-            <div class="profile-container">
-                <div class="personal-info">
+            <div class="flex-container-h">
+                <div id="personal-info" class="flex-container-left">
                     <h1>Hosein Rahnama</h1>
                     <p>
                         Graduate Student in Computer Science <br>
@@ -63,7 +46,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="profile-picture">
+                <div id="profile-picture" class="flex-container-right">
                     <img src="./images/profile/sunny.jpg" alt="Profile Picture">
                 </div>
             </div>
@@ -124,7 +107,30 @@
     </main>
 </div>
 <footer>
-    <p><span class="copyleft">&copy</span> All rights are left to viewers of this blog.</p>
+    <div class="footer-container">
+        <div class="flex-container-h">
+            <ul class="flex-container-left">
+                <li><span class="copyleft">&copy</span> All rights are left to viewers of this blog.</li>
+            </ul>
+            <ul id="social-media" class="flex-container-right">
+                <li>
+                    <a href="https://t.me/Hosein_Rahnama" target="_blank" aria-label="Telegram">
+                        <img src="images/icons/telegram.png" alt="Telegram" class="social-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/hosein.rahnama" target="_blank" aria-label="Instagram">
+                        <img src="images/icons/instagram.png" alt="Instagram" class="social-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/hosein-rahnama/" target="_blank" aria-label="LinkedIn">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

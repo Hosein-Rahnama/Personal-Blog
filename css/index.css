@@ -7,51 +7,18 @@ header {
     background-color: black;
     color: white;
     margin-bottom: 1rem;
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
 }
 
-nav {
+.header-container {
     max-width: 800px;
     margin: auto;
     padding: 0rem 2rem;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    text-align: center;
-}
-
-.nav-menu li {
+nav ul li {
     display: inline;
     margin: 0 15px 0 0;
-}
-
-.social-media li {
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-@media (max-width: 550px) {
-    .nav-container {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        align-content: space-around;
-    }
-
-    .social-media li {
-        display: inline;
-        margin: 0 15px 0 0;
-    }
-
-    .social-media {
-        margin-bottom: 5px;
-    }
 }
 
 @media (max-width: 820px) {
@@ -75,7 +42,7 @@ nav ul li a:hover {
 
 /* A Division Containing Header and Main */
 
-.header-main-wrapper {
+.header-main-container {
     flex-shrink: 0;
 }
 
@@ -88,34 +55,26 @@ nav ul li a:hover {
     padding: 1rem 2rem;
 }
 
-.profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 @media (max-width: 550px) {
-    .profile-container {
+    #profile > div {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
 }
 
-.personal-info {
-    flex: 0 0 auto;
+#personal-info {
     margin: 0.25rem 0;
 }
 
-.personal-info h1 {
+#personal-info h1 {
     margin-bottom: 1rem;
 }
 
-.profile-picture {
-    flex: 0 0 auto;
+#profile-picture {
     margin: 0.25rem 0;
 }
 
-.profile-picture img {
+#profile-picture img {
     max-width: 100%;
     width: 150px;
     vertical-align: middle;
@@ -138,8 +97,30 @@ nav ul li a:hover {
 footer {
     flex-shrink: 0;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     background-color: black;
     color: white;
     margin-top: 1rem;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 550px) {
+    .footer-container > div {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    #social-media li {
+        display: inline;
+        margin: 0 7.5px;
+    }
+
+    #social-media {
+        margin-bottom: 5px;
+    }
 }
