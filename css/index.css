@@ -1,6 +1,7 @@
 /* Constants and Variables */
 /* Navigation Bar */
 header {
+  font-family: Lato-Regular;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -44,6 +45,7 @@ nav ul li a:hover {
 
 /* Profile Section */
 #profile {
+  font-family: Lato-Regular;
   margin-top: 0;
   background-color: #008cba;
   color: white;
@@ -89,6 +91,7 @@ nav ul li a:hover {
 
 /* Footer Section */
 footer {
+  font-family: Lato-Regular;
   flex-shrink: 0;
   background-color: black;
   color: white;

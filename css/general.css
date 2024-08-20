@@ -7,10 +7,10 @@ html {
 
 body {
   height: 100%;
-  font-family: Lato, sans-serif;
-  font-size: 90%;
+  font-family: Lato-Light, sans-serif;
+  font-size: 100%;
   line-height: 1.25;
-  color: #444;
+  color: black;
   background-color: whitesmoke;
 }
 
@@ -35,6 +35,7 @@ h2 {
 }
 
 a {
+  font-family: Lato-Regular;
   text-decoration: none !important;
 }
 
@@ -48,6 +49,7 @@ a:hover {
 
 tt {
   font-family: JetBrains, monospace;
+  font-size: 95%;
 }
 
 /* Table Alignments */
@@ -97,7 +99,7 @@ tt {
 
 .email-icon {
   vertical-align: top;
-  width: 20px;
+  height: 18px;
 }
 
 .social-icon {
