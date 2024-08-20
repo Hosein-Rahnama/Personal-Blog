@@ -1,13 +1,11 @@
 /* Fonts */
-
 @font-face {
-    font-family: Lato;
-    src: url(./fonts/Lato-Hairline.woff2) format('woff2'),
-         url(./fonts/Lato-Hairline.woff) format('woff'),
-         url(./fonts/Lato-Hairline.ttf) format('truetype')
+  font-family: Lato;
+  src: url(./fonts/Lato-Hairline.woff2) format("woff2"), url(./fonts/Lato-Hairline.woff) format("woff"), url(./fonts/Lato-Hairline.ttf) format("truetype");
+}
+@font-face {
+  font-family: JetBrains;
+  src: url(./fonts/JetBrainsMono-Regular.woff2) format("woff2");
 }
 
-@font-face {
-    font-family: JetBrains;
-    src: url(./fonts/JetBrainsMono-Regular.woff2) format('woff2');
-}
+/*# sourceMappingURL=fonts.css.map */

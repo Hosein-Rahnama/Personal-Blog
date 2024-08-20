@@ -1,120 +1,115 @@
+/* Constants and Variables */
 /* General Setting */
-
 html {
-    height: 100%;
-    -webkit-text-size-adjust: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-    height: 100%;
-    font-family: Lato, sans-serif;
-    font-size: 90%;
-    line-height: 1.25;
-    color: #444;
-    background-color: whitesmoke;
+  height: 100%;
+  font-family: Lato, sans-serif;
+  font-size: 90%;
+  line-height: 1.25;
+  color: #444;
+  background-color: whitesmoke;
 }
 
 section {
-    margin: 0.5rem auto;
-    max-width: 800px;
-    border-radius: 10px;
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 
 @media (max-width: 820px) {
-    section {
-        margin: 0 1rem;
-    }
+  section {
+    margin: 1rem 1rem;
+  }
 }
-
 p {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
-    margin: 0.5rem auto;
+  margin: 0.5rem auto;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 a:visited {
-    color: purple;
+  color: purple;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 tt {
-    font-family: JetBrains, monospace;
+  font-family: JetBrains, monospace;
 }
 
 table.align-center-1st-column td:nth-child(1) {
-    text-align: center;
+  text-align: center;
 }
 
-
 /* Horizontal Flex Container */
-
 .flex-container-h {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .flex-container-h ul {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 .flex-container-left li {
-    display: inline;
-    margin: 0 15px 0 0;
+  display: inline;
+  margin: 0 15px 0 0;
 }
 
 .flex-container-right li {
-    display: inline;
-    margin: 0 0 0 15px;
+  display: inline;
+  margin: 0 0 0 15px;
 }
-
 
 /* Vertical Flex Container */
-
 .flex-container-v {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 /* Copyleft sign */
-
 .copyleft {
-    font-size: larger;
-    display: inline-block;
-    transform: rotate(180deg);
+  font-size: larger;
+  display: inline-block;
+  transform: rotate(180deg);
 }
 
-
 /* Icons */
-
 .icon {
-    vertical-align: middle;
-    height: 20px;
+  vertical-align: middle;
+  height: 20px;
 }
 
 .email-icon {
-    vertical-align: top;
-    width: 22px;
+  vertical-align: top;
+  width: 22px;
 }
 
 .social-icon {
-    width: 25px;
-    vertical-align: middle;
-    transition: transform 0.2s ease;
+  width: 25px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
+
+/*# sourceMappingURL=general.css.map */

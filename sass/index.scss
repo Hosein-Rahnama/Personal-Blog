@@ -1,0 +1,140 @@
+@import 'variables';
+
+    
+/* Navigation Bar */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+    color: white;
+    margin-bottom: $vertical-gap;
+}
+
+.header-container {
+    max-width: $page-width;
+    margin: 0 auto;
+    padding: 0.75rem $page-horizontal-padding;
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .header-container {
+        margin: 0 $page-min-horizontal-margin;
+    }
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px 0 0;
+}
+
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lightgreen;
+}
+
+
+/* A Division Containing Header and Main */
+
+.header-main-container {
+    flex-shrink: 0;
+}
+
+
+/* Profile Section */
+
+#profile {
+    margin-top: 0;
+    background-color: #008cba;
+    color: white;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    #profile > div {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+
+#personal-info {
+    margin: 0.25rem 0;
+}
+
+#personal-info h1 {
+    margin-bottom: 1rem;
+}
+
+#profile-picture {
+    margin: 0.25rem 0;
+}
+
+#profile-picture img {
+    max-width: 100%;
+    width: 150px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+
+/* About Section */
+
+#about {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Portfolio Section */
+
+#portfolio {
+    margin-bottom: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer Section */
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: $vertical-gap;
+}
+
+.footer-container {
+    max-width: $page-width;
+    margin: 0 auto;
+    padding: 0.75rem $page-horizontal-padding;
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .footer-container {
+        margin: 0 $page-min-horizontal-margin;
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .footer-container > div {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    #social-media li {
+        display: inline;
+        margin: 0 7.5px;
+    }
+
+    #social-media {
+        margin-bottom: 5px;
+    }
+}
