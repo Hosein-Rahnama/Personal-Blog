@@ -2,7 +2,7 @@
 
 Here is a list of possible future improvements.
 
-- Add notes.
+- Add pdf of my CV.
+- Add my notes on mathmetics and computer science.
 - Improve file and folder structure.
-- Add last updated status.
 - Add site statistics such as number of downloads and views.

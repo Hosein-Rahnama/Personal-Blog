@@ -50,8 +50,13 @@ tt {
   font-family: JetBrains, monospace;
 }
 
-table.align-center-1st-column td:nth-child(1) {
+/* Table Alignments */
+.align-center-1st-column td:nth-child(1) {
   text-align: center;
+}
+
+.align-top-td {
+  vertical-align: top;
 }
 
 /* Horizontal Flex Container */
@@ -84,13 +89,6 @@ table.align-center-1st-column td:nth-child(1) {
   justify-content: space-between;
 }
 
-/* Copyleft sign */
-.copyleft {
-  font-size: larger;
-  display: inline-block;
-  transform: rotate(180deg);
-}
-
 /* Icons */
 .icon {
   vertical-align: middle;
@@ -99,7 +97,7 @@ table.align-center-1st-column td:nth-child(1) {
 
 .email-icon {
   vertical-align: top;
-  width: 22px;
+  width: 20px;
 }
 
 .social-icon {

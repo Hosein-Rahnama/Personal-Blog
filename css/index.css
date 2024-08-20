@@ -90,12 +90,16 @@ nav ul li a:hover {
 /* Footer Section */
 footer {
   flex-shrink: 0;
-  text-align: center;
   background-color: black;
   color: white;
   margin-top: 1rem;
 }
 
+@media (max-wdith: 550px) {
+  .footer {
+    text-align: center;
+  }
+}
 .footer-container {
   max-width: 800px;
   margin: 0 auto;

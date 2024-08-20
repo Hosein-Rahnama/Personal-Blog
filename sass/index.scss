@@ -105,10 +105,15 @@ nav ul li a:hover {
 
 footer {
     flex-shrink: 0;
-    text-align: center;
     background-color: black;
     color: white;
     margin-top: $vertical-gap;
+}
+
+@media (max-wdith: $mobile-breakpoint) {
+    .footer {
+        text-align: center;
+    }
 }
 
 .footer-container {
