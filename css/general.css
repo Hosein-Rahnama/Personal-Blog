@@ -1,4 +1,9 @@
-/* Constants and Variables */
+/* Variables */
+:root {
+  --nav-hover-color: lightSkyBlue;
+}
+
+/* Dimentional Constants */
 /* General Setting */
 html {
   height: 100%;

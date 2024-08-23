@@ -1,4 +1,9 @@
-/* Constants and Variables */
+/* Variables */
+:root {
+  --nav-hover-color: lightSkyBlue;
+}
+
+/* Dimentional Constants */
 /* Navigation Bar */
 header {
   font-family: Lato-Regular;
@@ -34,13 +39,29 @@ nav ul li a:visited {
   color: white;
 }
 
+nav ul li a:active {
+  color: white;
+}
+
 nav ul li a:hover {
+  color: var(--nav-hover-color);
+}
+
+nav ul li a.selected {
   color: lightgreen;
 }
 
 /* A Division Containing Header and Main */
 .header-main-container {
   flex-shrink: 0;
+}
+
+#extra {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  background-color: whitesmoke;
 }
 
 /* Profile Section */
@@ -96,6 +117,12 @@ footer {
   background-color: black;
   color: white;
   margin-top: 1rem;
+}
+
+.sticky-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
 }
 
 @media (max-wdith: 550px) {
