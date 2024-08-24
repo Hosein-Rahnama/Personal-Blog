@@ -1,7 +1,7 @@
 @import 'variables';
 
     
-/* General Setting */
+/* General Styles */
 
 html {
     height: 100%;
@@ -14,7 +14,7 @@ body {
     font-size: 100%;
     line-height: 1.25;
     color: black;
-    background-color: whitesmoke;
+    background-color: $base-color;
 }
 
 section {
@@ -122,4 +122,11 @@ tt {
 
 .social-icon:hover {
     transform: scale(1.15);
+}
+
+
+/* Copyleft Sign */
+
+.copyleft {
+    font-size: large;
 }

@@ -1,10 +1,11 @@
 ## TODO List
 
-Here is a list of possible future improvements.
+Here is a prioritized list of possible future improvements.
 
 - Add pdf of my CV.
-- Improve appearance.
-- Add my notes on mathmetics and computer science.
 - Improve file and folder structure.
+- Improve appearance of the Profile section.
+- Fix the Chrome bug for font auto resizing on mobile devices.
+- Add my notes on mathmetics and computer science.
 - Add site statistics such as number of downloads and views.
-- Fix the firefox bug for scrolling to Portfolio section while auto hidding toolbar is enabled.
+- Fix the Firefox bug for scrolling to the Portfolio section while auto hidding toolbar is enabled.

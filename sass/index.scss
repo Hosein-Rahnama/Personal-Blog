@@ -62,7 +62,7 @@ nav ul li a.selected {
     margin: 0;
     padding: 0;
     height: 0;
-    background-color: whitesmoke;
+    background-color: $base-color;
 }
 
 
@@ -106,7 +106,7 @@ nav ul li a.selected {
 
 #about {
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px $shadow-color;
 }
 
 
@@ -115,7 +115,7 @@ nav ul li a.selected {
 #portfolio {
     margin-bottom: 0;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px $shadow-color;
 }
 
 
