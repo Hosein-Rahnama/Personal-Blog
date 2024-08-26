@@ -13,14 +13,14 @@ header {
     margin-bottom: $vertical-gap;
 }
 
-.header-container {
+.header-content {
     max-width: $page-width;
     margin: 0 auto;
     padding: 0.75rem $page-horizontal-padding;
 }
 
 @media (max-width: $tablet-breakpoint) {
-    .header-container {
+    .header-content {
         margin: 0 $page-min-horizontal-margin;
     }
 }
@@ -141,20 +141,20 @@ footer {
     }
 }
 
-.footer-container {
+.footer-content {
     max-width: $page-width;
     margin: 0 auto;
     padding: 0.75rem $page-horizontal-padding;
 }
 
 @media (max-width: $tablet-breakpoint) {
-    .footer-container {
+    .footer-content {
         margin: 0 $page-min-horizontal-margin;
     }
 }
 
 @media (max-width: $mobile-breakpoint) {
-    .footer-container > div {
+    .footer-content > div {
         flex-direction: column-reverse;
         justify-content: space-around;
     }

@@ -16,14 +16,14 @@ header {
   margin-bottom: 1rem;
 }
 
-.header-container {
+.header-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 0.75rem 2rem;
 }
 
 @media (max-width: 820px) {
-  .header-container {
+  .header-content {
     margin: 0 1rem;
   }
 }
@@ -131,19 +131,19 @@ footer {
     text-align: center;
   }
 }
-.footer-container {
+.footer-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 0.75rem 2rem;
 }
 
 @media (max-width: 820px) {
-  .footer-container {
+  .footer-content {
     margin: 0 1rem;
   }
 }
 @media (max-width: 550px) {
-  .footer-container > div {
+  .footer-content > div {
     flex-direction: column-reverse;
     justify-content: space-around;
   }
