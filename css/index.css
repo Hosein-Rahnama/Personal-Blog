@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --nav-hover-color: lightSkyBlue;
+  --footer-bottom: 0;
 }
 
 /* Dimensional Constants */
@@ -127,7 +128,7 @@ footer {
 
 .sticky-footer {
   position: sticky;
-  bottom: 0;
+  bottom: var(--footer-bottom);
   z-index: 999;
 }
 

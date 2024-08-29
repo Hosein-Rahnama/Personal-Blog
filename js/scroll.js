@@ -1,24 +1,26 @@
-import {isInViewport, makeFooterSticky, errorPixel} from './util.js'
+import {isInViewport, makeFooterSticky, errorPixel, isPartiallyInViewport} from './util.js'
 
 
-export function scrollToSection(targetId) {
+export async function scrollToSection(targetId) {
     const targetElement = document.getElementById(targetId);
     const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
     const extra = document.getElementById('extra');
     const gap = parseInt(window.getComputedStyle(header).marginBottom, 10);
 
     // Calculate the position to scroll to, considering the navbar height and gaps between sections.
-    const targetElementUpperSpace = targetElement.getBoundingClientRect().top - header.offsetHeight - gap;
+    let targetElementUpperSpace = targetElement.getBoundingClientRect().top - header.offsetHeight - gap;
 
     // Check if the target element is in the top.
-    if (Math.abs(targetElementUpperSpace) < 2) {
+    if (Math.abs(targetElementUpperSpace) < errorPixel) {
         return;
     }
 
-    // Make footer sticky.
-    const footer = document.querySelector('footer');
-    if (isInViewport(targetElement) && isInViewport(footer)) {
-        makeFooterSticky(true);
+    // Make footer sticky for smooth scrolling.
+    if (isInViewport(targetElement)) {
+        if (isInViewport(footer) || isPartiallyInViewport(footer)) {
+            makeFooterSticky(true);
+        }
     }
 
     // Handle the case where there is not enough space for scrolling down.
