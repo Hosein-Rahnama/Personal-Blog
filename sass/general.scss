@@ -11,12 +11,14 @@ body {
     height: 100%;
     font-family: Lato-Light, sans-serif;
     font-size: 106%;
-    line-height: 1.25;
+    line-height: 1.2;
     color: black;
     background-color: $base-color;
 }
 
 section {
+    background-color: white;
+    box-shadow: 0 0 10px $shadow-color;
     max-width: $page-width;
     margin: $vertical-gap auto;
     padding: 1rem $page-horizontal-padding;
@@ -33,7 +35,7 @@ p {
     margin-bottom: 0.5rem;
 }
 
-h2 {
+h1 {
     margin: 0.5rem auto;
 }
 
@@ -51,18 +53,15 @@ a:hover {
 }
 
 tt {
-    font-family: JetBrains, monospace;
+    font-family: JetBrainsMono-Thin, monospace;
     font-size: 95%;
 }
 
 
 /* Table Alignments */
 
-.align-center-1st-column td:nth-child(1) {
-    text-align: center;
-}
-
 .align-top-td {
+    text-align: center;
     vertical-align: top;
 }
 
@@ -74,6 +73,7 @@ tt {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .flex-container-h ul {
@@ -101,6 +101,23 @@ tt {
 }
 
 
+/* A Flex Container for Centering Elements */
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* A Grid Container for Lists */
+
+.list-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
 /* Icons */
 
 .icon {
@@ -109,8 +126,12 @@ tt {
 }
 
 .email-icon {
-    vertical-align: top;
+    vertical-align: middle;
     height: 18px;
+}
+
+.email-part {
+    display: inline-block;
 }
 
 .social-icon {

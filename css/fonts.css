@@ -8,7 +8,11 @@
   src: url(../fonts/Lato-Regular.woff2) format("woff2"), url(../fonts/Lato-Regular.woff) format("woff"), url(../fonts/Lato-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: JetBrains;
+  font-family: JetBrainsMono-Thin;
+  src: url(../fonts/JetBrainsMono-Thin.woff2) format("woff2");
+}
+@font-face {
+  font-family: JetBrainsMono-Regular;
   src: url(../fonts/JetBrainsMono-Regular.woff2) format("woff2");
 }
 

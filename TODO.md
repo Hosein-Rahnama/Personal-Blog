@@ -2,9 +2,9 @@
 
 Here is a prioritized list of possible future improvements.
 
+- Fix a automatic scrolling bug, when part of the footer in the viewport.
 - Add pdf of my CV.
 - Improve file and folder structure.
-- Improve appearance of the Profile section.
 - Add my notes on mathmetics and computer science.
 - Add site statistics such as number of downloads and views.
 - Add search bar.

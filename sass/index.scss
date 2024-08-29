@@ -69,43 +69,49 @@ nav ul li a.selected {
 /* Profile Section */
 
 #profile {
-    font-family: Lato-Regular;
+    position: relative;
     margin-top: 0;
-    background-color: #008cba;
-    color: white;
+    padding: 0;
+}
+
+#profile-picture {
+    position: absolute;
+    left: $page-horizontal-padding;
+}
+
+#profile-picture img {
+    height: 150px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+#landscape-picture {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
 
 @media (max-width: $mobile-breakpoint) {
-    #profile > div {
-        flex-direction: column-reverse;
-        align-items: flex-start;
+    #landscape-picture {
+        overflow-x: scroll;
     }
 }
 
 #personal-info {
-    margin: 0.25rem 0;
+    padding: 1rem $page-horizontal-padding;
+    padding-top: 0.5rem;
 }
 
-#personal-info h1 {
-    margin-bottom: 1rem;
-}
-
-#profile-picture {
-    margin: 0.25rem 0;
-}
-
-#profile-picture img {
-    max-width: 100%;
-    width: 150px;
-    vertical-align: middle;
-    border-radius: 50%;
+#personal-info > div {
+    align-items: flex-start;
 }
 
 
 /* About Section */
 
 #about {
-    background-color: white;
     box-shadow: 0 0 10px $shadow-color;
 }
 
@@ -114,7 +120,6 @@ nav ul li a.selected {
 
 #portfolio {
     margin-bottom: 0;
-    background-color: white;
     box-shadow: 0 0 10px $shadow-color;
 }
 
